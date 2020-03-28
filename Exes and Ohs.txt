@@ -1,0 +1,18 @@
+function XO(str) {
+var xCount=0;
+var oCount=0;
+for(var i=0;i<str.length;i++)
+{
+if(str[i]=='x'||str[i]=='X')
+{
+xCount++;
+}
+else if(str[i]=='o'||str[i]=='O')
+{
+oCount++;
+}
+}
+if(xCount==oCount)
+return true;
+return false;
+}
